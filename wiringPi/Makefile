@@ -25,7 +25,7 @@ VERSION=$(shell cat ../VERSION)
 DESTDIR=$(TARGET_DIR)
 PREFIX?=
 
-LDCONFIG?=ldconfig
+LDCONFIG=$(TARGET_LD)
 
 ifneq ($V,1)
 Q ?= @

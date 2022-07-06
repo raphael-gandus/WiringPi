@@ -46,7 +46,7 @@ check_make_ok() {
 sudo=${WIRINGPI_SUDO-sudo}
 
 if [ x$1 = "xclean" ]; then
-  cd output/build/custom_wiringpi-2.61-1/wiringPi
+  cd output/build/custom_wiringpi-main/wiringPi
   echo -n "wiringPi:   "	; make clean
   cd ../devLib
   echo -n "DevLib:     "	; make clean
@@ -71,7 +71,7 @@ if [ x$1 = "xclean" ]; then
 fi
 
 if [ x$1 = "xuninstall" ]; then
-  cd output/build/custom_wiringpi-2.61-1/wiringPi
+  cd output/build/custom_wiringpi-main/wiringPi
   echo -n "wiringPi: " ; $sudo make uninstall
   cd ../devLib
   echo -n "DevLib:   " ; $sudo make uninstall
@@ -83,7 +83,7 @@ fi
 # Only if you know what you're doing!
 
 if [ x$1 = "xdebian" ]; then
-  here=output/build/custom_wiringpi-2.61-1/
+  here=output/build/custom_wiringpi-main/
   deb_destdir=${here}/debian-template/wiringPi
   cd debian-template/wiringPi
   rm -rf usr
@@ -128,7 +128,7 @@ fi
 
   echo
   echo "WiringPi Library"
-  cd output/build/custom_wiringpi-2.61-1/wiringPi
+  cd output/build/custom_wiringpi-main/wiringPi
   $sudo make uninstall
   if [ x$1 = "xstatic" ]; then
     make -j5 static

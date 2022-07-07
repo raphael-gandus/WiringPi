@@ -22,8 +22,8 @@
 #################################################################################
 
 VERSION=$(shell cat ../VERSION)
-DESTDIR?=/usr
-PREFIX?=/local
+DESTDIR=/home/raph/Development-tools/test1/output/target
+PREFIX=
 
 LDCONFIG?=ldconfig
 
@@ -36,7 +36,7 @@ DYNAMIC=libwiringPiDev.so.$(VERSION)
 
 #DEBUG	= -g -O0
 DEBUG	= -O2
-CC	?= gcc
+CC	= /home/raph/Development-tools/test1/output/host/bin/arm-buildroot-linux-gnueabihf-gcc
 INCLUDE	= -I.
 DEFS	= -D_GNU_SOURCE
 CFLAGS	= $(DEBUG) $(DEFS) -Wformat=2 -Wall -Winline $(INCLUDE) -pipe -fPIC $(EXTRA_CFLAGS)

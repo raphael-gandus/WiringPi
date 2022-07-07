@@ -22,7 +22,7 @@
 #################################################################################
 
 VERSION=$(shell cat ../VERSION)
-DESTDIR=$(TARGET_DIR)
+DESTDIR=/home/raph/Development-tools/test1/output/target
 PREFIX?=
 
 LDCONFIG=$(TARGET_LD)

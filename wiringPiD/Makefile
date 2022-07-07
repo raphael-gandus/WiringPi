@@ -22,7 +22,7 @@
 #    along with wiringPi.  If not, see <http://www.gnu.org/licenses/>.
 #################################################################################
 
-DESTDIR?=$(TARGET_DIR)
+DESTDIR?=/home/raph/Development-tools/test1/output/target
 PREFIX?=
 
 ifneq ($V,1)

@@ -31,7 +31,7 @@ endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O2
-CC	= $(TARGET_CC) 
+CC	= /home/raph/Development-tools/test1/output/host/bin/arm-buildroot-linux-gnueabihf-gcc
 INCLUDE	= -I$(DESTDIR)$(PREFIX)/include
 CFLAGS	= $(DEBUG) -Wall -Wextra $(INCLUDE) -Winline -pipe $(EXTRA_CFLAGS)
 

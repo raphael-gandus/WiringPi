@@ -23,8 +23,8 @@
 #    along with wiringPi.  If not, see <http://www.gnu.org/licenses/>.
 #################################################################################
 
-DESTDIR?=/usr
-PREFIX?=/local
+DESTDIR=/home/raph/Development-tools/test1/output/target
+PREFIX=
 
 ifneq ($V,1)
 Q ?= @
@@ -32,7 +32,7 @@ endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O2
-CC	?= gcc
+CC	= /home/raph/Development-tools/test1/output/host/bin/arm-buildroot-linux-gnueabihf-gcc
 INCLUDE	= -I$(DESTDIR)$(PREFIX)/include
 CFLAGS	= $(DEBUG) -Wall -Wextra $(INCLUDE) -Winline -pipe $(EXTRA_CFLAGS)
 

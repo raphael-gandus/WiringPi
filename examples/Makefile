@@ -28,7 +28,7 @@ endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O3
-CC	?= gcc
+CC	= /home/raph/Development-tools/test1/output/host/bin/arm-buildroot-linux-gnueabihf-gcc
 INCLUDE	= -I/usr/local/include
 CFLAGS	= $(DEBUG) -Wall $(INCLUDE) -Winline -pipe $(EXTRA_CFLAGS)
 
